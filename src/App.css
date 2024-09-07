@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  box-shadow: none;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+#app {
+  width: 100%;
+}
+body {
+  min-height: 100vh;
+  font-family: Tajawal, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  background: #f9f9f9;
+  overflow-x: hidden;
+}
+.btn {
+    padding: 8px 20px;
+}
+.cart i {
+  font-size: 22px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+h2 {
+    font-size: 3rem;
+}
+.container {
+    max-width: 1600px;
+}
+.banner {
+    background: url("/images/banner-img.png") top right no-repeat; 
+    background-size: contain;
+}
+
+.product-card {
+    padding: 60px 0;
+}
+.card {
+    transition: all .5s;
+}
+.card:hover {
+    margin-top: -10px;
+    transition: all .5s;
+}
+.card:hover .card-img {
+    transition: all .5s;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+.card:hover .card-img img{
+    transition: all .5s;
+    transform: scale(.8);    
+}
+.form {
+    height: calc(100vh - 80px);
+}
+.offcanvas.offcanvas-end {
+    width: 650px;
+}
+.color-box {
+    background-color: red;
+    width: 24px;
+    height: 24px;
+    display: block;
+}
