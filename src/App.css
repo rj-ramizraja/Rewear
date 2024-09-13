@@ -17,6 +17,10 @@ body {
 }
 .btn {
     padding: 8px 20px;
+    text-transform: uppercase;
+}
+.btn:focus-visible{
+    box-shadow: none;
 }
 .cart i {
   font-size: 22px;
@@ -34,7 +38,9 @@ h2 {
     background: url("/images/banner-img.png") top right no-repeat; 
     background-size: contain;
 }
-
+.bg-light {
+    background-color: #eeeeee !important;
+}
 .product-card {
     padding: 60px 0;
 }
@@ -65,4 +71,17 @@ h2 {
     width: 24px;
     height: 24px;
     display: block;
+}
+.card.active {
+ border: 1px solid #000;   
+}
+.card i{
+    display: none;
+}
+.card.active i{
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 24px;
 }

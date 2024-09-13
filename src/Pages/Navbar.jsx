@@ -67,7 +67,25 @@ const Navbar = () => {
                   </span>
                 </Link>
               </div>
-              <div className="d-flex gap-1 ms-4">
+              <div className="d-flex align-items-center dropdown">
+                <button
+                  className="btn btn-link p-0 text-dark text-decoration-none dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  User Name
+                  <i className="fa-solid fa-circle-user fs-3 ms-2 me-1"></i>
+                </button>
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link className="dropdown-item" to="#">
+                      Sign Out
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              {/* <div className="d-flex gap-1 ms-4">
                 <Link className="btn btn-dark" type="button" to="/login">
                   Sign In
                 </Link>
@@ -78,7 +96,7 @@ const Navbar = () => {
                 >
                   Sign Up
                 </Link>
-              </div>
+              </div> */}
             </form>
           </div>
         </div>
@@ -106,38 +124,56 @@ const Navbar = () => {
             <table className="table">
               <tbody>
                 <tr>
-                  <td width="23%">
+                  <td width="23%" valign="middle">
                     <img
                       src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7"
                       className="img-fluid"
                     />
                   </td>
-                  <td width="27%">
+                  <td width="27%" valign="middle">
                     <h5>Kibal Batal</h5>
                     <h6>
                       Size <span className="fw-normal">28 mm</span>
                     </h6>
                   </td>
-                  <td className="fw-semibold text-center" width="24%">
+                  <td
+                    className="fw-semibold text-center"
+                    width="24%"
+                    valign="middle"
+                  >
                     <h6>Qty</h6>
                     <div className="input-group">
-                      <button className="btn btn-outline-dark px-3" type="button">
+                      <button
+                        className="btn btn-outline-dark px-3"
+                        type="button"
+                      >
                         -
                       </button>
-                      <input type="text" aria-label="First name" className="form-control" />
-                      <button className="btn btn-outline-dark px-3" type="button">
+                      <input
+                        type="text"
+                        aria-label="First name"
+                        className="form-control"
+                      />
+                      <button
+                        className="btn btn-outline-dark px-3"
+                        type="button"
+                      >
                         +
                       </button>
                     </div>
                   </td>
-                  <td className="fw-semibold text-center" width="10%">
+                  <td
+                    className="fw-semibold text-center"
+                    width="10%"
+                    valign="middle"
+                  >
                     <h6>Color</h6>
                     <span className="d-block mx-auto color-box rounded-5"></span>
                   </td>
-                  <td width="15%">
+                  <td width="15%" valign="middle">
                     <h4>$149.99</h4>
                   </td>
-                  <td width="48px" className="text-center">
+                  <td width="48px" className="text-center" valign="middle">
                     <Link to="/">
                       <i className="fa-solid fa-xmark"></i>
                     </Link>
@@ -145,6 +181,18 @@ const Navbar = () => {
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+        <hr />
+        <div className="offcanvas-footer p-3 pt-0">
+          <div className="d-flex align-items-center justify-content-between">
+            <div>
+              <p className="mb-0">Subtotal Amout:</p>
+              <h3 className="mb-0">$1,057.00</h3>
+            </div>
+            <Link type="button" className="btn btn-dark">
+              Check Out
+            </Link>
           </div>
         </div>
       </div>
